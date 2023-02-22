@@ -31,23 +31,18 @@ def product_tree():
     MERCEDES.child(Tree("GLC"))
     MERCEDES.child(Tree("S class"))
     MERCEDES.child(Tree("A class"))
-
     BMW = Tree("BMW")
     BMW.child(Tree("Q6"))
     BMW.child(Tree("Q7"))
     BMW.child(Tree("X3"))
-
     AUDI = Tree("AUDI")
     AUDI.child(Tree("rs3"))
     AUDI.child(Tree("r8"))
     AUDI.child(Tree("a5"))
-
     root.child(MERCEDES)
     root.child(BMW)
     root.child(AUDI)
-
     return root
-
 
 if __name__ == '__main__':
     roots = product_tree()
@@ -55,7 +50,6 @@ if __name__ == '__main__':
     roots.print_tree()
 
 # Tree Example 2
-
 
 # class TreeNode:
 #     def __init__(self, name, designation):
@@ -83,7 +77,6 @@ if __name__ == '__main__':
 #             value = self.name
 #         else:
 #             value = self.designation
-#
 #         space = '  ' * self.get_level() * 2
 #         print(space + value)
 #         if self.subnode:
@@ -92,8 +85,6 @@ if __name__ == '__main__':
 #
 #
 # def export_manager():
-#     # CTO Hierarchy
-#
 #     infra_head = TreeNode("Vishwa", "Infrastructure head")
 #     infra_head.sub(TreeNode("Dhaval", "Cloud manager"))
 #     infra_head.sub(TreeNode("Abijith", "App manager"))
@@ -101,7 +92,6 @@ if __name__ == '__main__':
 #     CTO = TreeNode("chinmay", "CTO")
 #     CTO.sub(infra_head)
 #     CTO.sub(TreeNode("Aamir", "Application head"))
-#     # HR Hierarchy
 #
 #     HR_head = TreeNode("Gels", "HR Head")
 #     HR_head.sub(TreeNode("peter", "Requirement manager"))
